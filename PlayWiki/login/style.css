@@ -95,3 +95,12 @@ button{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
+@media (max-width:412px) {
+
+    .mainLogin{border-radius: 50px;width: 70%;left: 15%;top: 10%;}
+    .loginTop{left: 17%;position: relative;}
+    .inEmail, .inSenha{width: 80%;}
+    .email, .senha{left: 12%;}
+    button{left: 20%;top: 20%;border: 0;width: 60%;}    
+    
+}
