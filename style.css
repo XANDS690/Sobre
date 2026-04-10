@@ -1,5 +1,7 @@
 :root{
 
+    --cor-font:white;
+    --cor-font2: black;
     --cor-main: rgba(42, 42, 44, 0.6);
     --cor-main-contra: rgba(202, 202, 211, 0.6);
     --cor-body-contra:linear-gradient(to left,#e4e4e4 0%,#b9b7b7 25%,rgb(199, 194, 194) 50%,#b6b4b4 75%,#c5c2c2 100%);
@@ -10,7 +12,7 @@
 
 .body{
 
-    color: white;
+    color: var(--cor-font);
     font-family: arial;
     /*background: linear-gradient(to left, #000000, rgb(25, 25, 37),rgb(18, 18, 27),rgb(0, 0, 0));*/
     background: var(--cor-body);
@@ -52,7 +54,7 @@
 a{
 
     text-decoration: none;
-    color: white;
+
 
 }.img{
 
@@ -72,7 +74,7 @@ a{
     left: 36%;
     font-family: "Playwrite HU";
     /*Sombra ao redor do texto*/
-    text-shadow: 5px 5px 5px white;
+    text-shadow: 7px 7px 7px white;
 
 }
 
@@ -142,7 +144,6 @@ a{
     padding: 20px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     border-radius: 10px;
-    color: white;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     
 }
@@ -227,6 +228,7 @@ a{
 }.pro1,.pro2,.pro3{
 
     font-size: 15px;
+    color: var(--cor-font);
 
 
 

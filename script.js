@@ -52,18 +52,34 @@ function corMain() {
   let main = document.querySelector('.main1');
   let body = document.querySelector('.body');
   let btnShowPass = document.getElementById('moon');
+  let nome = document.querySelector('.nome1')
+  let pro1 = document.querySelector('pro1')
+  let pro2 = document.querySelector('pro2')
+  let pro3 = document.querySelector('pro3')
+  
   
   if (main.style.backgroundColor === 'var(--cor-main-contra)' && body.style.background === 'var(--cor-body-contra)') {
     
     main.style.backgroundColor = 'var(--cor-main)';
     body.style.background = 'var(--cor-body)';
+    body.style.color = 'var(--cor-font)'
     btnShowPass.classList.replace('bi-moon-stars','bi-brightness-high')
+    nome.style.textShadow = '7px 7px 7px white'
+    pro1.style.color = 'var(--cor-font)'
+    pro2.style.color = 'var(--cor-font)'
+    pro3.style.color = 'var(--cor-font)'
 
   } else {
 
     main.style.backgroundColor = 'var(--cor-main-contra)';
     body.style.background = 'var(--cor-body-contra)';
+    body.style.color = 'var(--cor-font2)'
     btnShowPass.classList.replace('bi-brightness-high','bi-moon-stars')
+    nome.style.textShadow = '7px 7px 7px black'
+    pro1.style.color = 'var(--cor-font2)'
+    pro2.style.color = 'var(--cor-font2)'
+    pro3.style.color = 'var(--cor-font2)'
+
   }
 }
 
