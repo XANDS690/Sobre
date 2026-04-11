@@ -1,4 +1,12 @@
 /*nome da tag que esta sendo "estilizada"*/
+:root{
+
+    --play: rgb(255, 255, 204);
+    --jg: rgb(41, 44, 63);
+
+}
+
+
 body{
     /*"margin" esta definindo o espaço externo ao redor de um elemento, ou seja afasta um elemento de outros elementos próximos*/
     /*"padding" esta defininfo o espaço interno de um elemento e sua borda*/
@@ -28,9 +36,11 @@ body{
     border-bottom-right-radius: 30px;
     width: 100%;
     height: 15%;
-    background: linear-gradient(to right, rgb(95, 95, 155) ,rgb(51, 51, 121), rgb(102, 104, 170));
+    background: rgb(4, 1, 44);
     background-size: 200% 100%;
     animation: backgroundAnimation 12s infinite;
+    top: -1%;
+    left: -0.3%;
 
 
 
@@ -38,12 +48,12 @@ body{
 .play{
 
     position: relative;
-    bottom: 78%;
+    bottom: 70%;
     font-size: 90px;
     font-family: fantasy;
-    color: #020927;
+    color: var(--play);
     border-bottom: solid 1px;
-    width: 100%;
+    width: 130%;
     height: 102%;
 
 
@@ -80,10 +90,10 @@ a{
     position: absolute;
     width: 70px;
     height: 50px;
-    border: solid 2px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-   background: linear-gradient(to right, rgb(95, 95, 155) ,rgb(51, 51, 121));
+    background-color: transparent;
+    border: none;
     top: 20%;
     left: -0.5%;
     cursor: pointer;
@@ -95,7 +105,9 @@ a{
     position: relative;
     width: 60%;
     border: solid;
+    border-radius: 10px;
     margin: 6px;
+    color: var(--play);
     
 
 }
@@ -203,14 +215,15 @@ a{
 .content{
 
     position: absolute;
-    border: solid 1px black;
+    border: solid 5px rgb(37, 36, 49);
     border-radius: 50px;
     color: white;
     width: 60%;
     height: 200%;
     top: 40%;
     left: 19.5%;
-    background: linear-gradient(to right, rgb(95, 95, 155) ,rgb(51, 51, 121), rgb(102, 104, 170));
+    background: rgb(27, 27, 36);
+    box-shadow: 5px 5px 5px black;
     background-size: 200% 100%;
     animation: backgroundAnimation 12s infinite;
 
@@ -247,7 +260,7 @@ a{
     border-radius: 50px;
     padding-left: 20px;
     padding-top: 20px;
-    background-color: rgb(158, 173, 241);
+    background-color: var(--jg);
 
    
 }
@@ -296,7 +309,7 @@ a{
     border-radius: 50px;
     padding-left: 20px;
     padding-top: 20px;
-    background-color: rgb(158, 173, 241);
+    background-color: var(--jg);
    
 
 
@@ -313,10 +326,11 @@ a{
 .descgta{
 
     position: relative;
-    width: 70%;
-    bottom: 75%;
-    left: 30%;
-    font-size: 20px;
+    width: 60%;
+    bottom: 80%;
+    left: 35%;
+    font-size: 18px;
+
  
 }
 .imggta{
@@ -336,7 +350,7 @@ a{
     border-radius: 50px;
     padding-left: 20px;
     padding-top: 20px;
-    background-color: rgb(158, 173, 241);
+    background-color: var(--jg);
     
     
     
@@ -352,9 +366,9 @@ a{
 .descdead{
 
     position: relative;
-    width: 70%;
-    bottom: 60%;
-    left: 30%;
+    width: 60%;
+    bottom: 70%;
+    left: 35%;
     font-size: 20px;
 
 }
@@ -364,7 +378,7 @@ a{
     border-radius: 20px;
 
 }
-@media(max-width:1920px){
+@media(min-width:1920px){
 
     .content{height: 150%;}
     .jg1{top: 20%;}

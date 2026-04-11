@@ -53,9 +53,9 @@ function corMain() {
   let body = document.querySelector('.body');
   let btnShowPass = document.getElementById('moon');
   let nome = document.querySelector('.nome1')
-  let pro1 = document.querySelector('pro1')
-  let pro2 = document.querySelector('pro2')
-  let pro3 = document.querySelector('pro3')
+  let pro1 = document.querySelector('.pro1')
+  let pro2 = document.querySelector('.pro2')
+  let pro3 = document.querySelector('.pro3')
   
   
   if (main.style.backgroundColor === 'var(--cor-main-contra)' && body.style.background === 'var(--cor-body-contra)') {
